@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-
+<!-- Configuracion de la pagina + info adicional + titulo de la pagina + icono-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,20 +11,26 @@
     <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 
-
+<!-- Contenido de la Pagina -->
 <body>
+    <!-- Cabecera de la pagina -->
     <header>
+        <!-- defino la barra de navegacion -->
+        <!-- creo la barra de navegacion, le doy estilo color, fondo, la fijo  -->
         <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+            <!-- centro y limito el ancho del contenido de la barra -->
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="/resources/img/codoacodo.png" alt="Codo a Codo logo">
                     Conf Bs As
                 </a>
+                <!-- defino boton para expandir o no el menu -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- muestro el icono del boton del menu de navegacion -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -39,23 +45,30 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#form-orador">Conviértete en orador</a>
                         </li>
-                        <li class="nav-item">
+                     <!--   <li class="nav-item">
                             <a class="nav-link btn-compra-tickets" href="comprar-tickets.html">Comprar tickets</a>
-                        </li>
+                        </li>    -->
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Contenido de la Pagina -->
     <main>
+        <!-- Carrousel de Bootstrap -->
         <section>
+            <!-- creo el carousel de imagenes -->
             <div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                 
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
                         aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+                </div>  
+
+                <!-- envuelvo todo el contenido del carrusel, que incluye los diferentes elementos del carrusel y sus contenidos-->
                 <div class="carousel-inner">
                     <div class="carousel-item active bg-carousel-ba1">
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000"/></svg>
@@ -65,7 +78,7 @@
                                     <div class="col-lg-8 offset-lg-6">
                                         <h3>Conf Bs. As.</h3>
                                         <p>Bs. As. llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y la experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                                        <p><a class="btn btn-outline-light mb-3" href="#form-orador">Quiero ser orador</a> <a class="btn btn-success ms-2 mb-3" href="comprar-tickets.html">Comprar tickets</a></p>
+                                        <p><a class="btn btn-outline-light mb-3" href="#form-orador">Quiero ser orador</a> <!-- <a class="btn btn-success ms-2 mb-3" href="comprar-tickets.html">Comprar tickets</a>  --> </p>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +92,7 @@
                                     <div class="col-lg-6 offset-lg-6">
                                         <h3>Conf Bs. As.</h3>
                                         <p>Bs. As. llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y la experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                                        <p><a class="btn btn-outline-light mb-3" href="#form-orador">Quiero ser orador</a> <a class="btn btn-success ms-2 mb-3" href="comprar-tickets.html">Comprar tickets</a></p>
+                                        <p><a class="btn btn-outline-light mb-3" href="#form-orador">Quiero ser orador</a> <!-- <a class="btn btn-success ms-2 mb-3" href="comprar-tickets.html">Comprar tickets</a>  --> </p>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +106,7 @@
                                     <div class="col-lg-6 offset-lg-6">
                                         <h3>Conf Bs. As.</h3>
                                         <p>Bs. As. llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y la experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                                        <p><a class="btn btn-outline-light mb-3" href="#form-orador">Quiero ser orador</a> <a class="btn btn-success ms-2 mb-3" href="comprar-tickets.html">Comprar tickets</a></p>
+                                        <p><a class="btn btn-outline-light mb-3" href="#form-orador">Quiero ser orador</a> <!-- <a class="btn btn-success ms-2 mb-3" href="comprar-tickets.html">Comprar tickets</a>  --> </p>
                                     </div>
                                 </div>
                             </div>
@@ -109,15 +122,16 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-            
         </section>
 
+        <!-- se muestran los oradores del evento-->
         <section class="container mb-4" id="oradores">
             <h2 class="titulo-gral">Conoce a los <span>oradores</span></h2>
     
             <div class="row justify-content-center">
                 <div class="col-md-11">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!--crea una tarjeta que muestra información sobre un orador-->
                         <div class="col">
                             <div class="card h-100">
                                 <img src="./resources/img/steve.jpg" class="card-img-top" alt="...">
@@ -127,10 +141,11 @@
                                         <span class="badge bg-info">React</span>
                                     </div>
                                     <h5 class="card-title">Steve Jobs</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et aspernatur, sit dolorem officiis dolor, nobis sed labore non culpa dignissimos amet excepturi odit quis quos temporibus ut asperiores possimus. Veniam!</p>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellar ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
                                 </div>
                             </div>
                         </div>
+                        <!--crea una tarjeta que muestra información sobre un orador-->
                         <div class="col">
                             <div class="card h-100">
                                 <img src="./resources/img/bill.jpg" class="card-img-top" alt="...">
@@ -140,10 +155,11 @@
                                         <span class="badge bg-info">React</span>
                                     </div>
                                     <h5 class="card-title">Bill Gates</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, nostrum saepe et quaerat illo possimus provident laboriosam totam sunt magni recusandae eligendi optio earum quas ab omnis fuga molestiae corrupti.</p>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellar ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
                                 </div>
                             </div>
                         </div>
+                        <!--crea una tarjeta que muestra información sobre un orador-->
                         <div class="col">
                             <div class="card h-100">
                                 <img src="./resources/img/ada.jpeg" class="card-img-top" alt="...">
@@ -153,16 +169,16 @@
                                         <span class="badge bg-danger">Startups</span>
                                     </div>
                                     <h5 class="card-title">Ada Lovelace</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, veniam eius excepturi sapiente eligendi quaerat soluta nihil iste vero sequi cum nam quibusdam quam voluptas consequuntur natus! Optio, perspiciatis velit.</p>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellar ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
         </section>
 
+        <!-- muestra una imagen y un texto relacionado. La sección está dividida en dos columnas, una que ocupa el ancho completo en dispositivos pequeños y una mitad en dispositivos medianos y grandes, que contiene la imagen y otra mitad que contiene el texto-->
         <section class="mb-4" id="lugar">
             <div class="row g-0">
                 <div class="col-md">
@@ -170,12 +186,13 @@
                 </div>
                 <div class="col-md text-light bg-aside1">
                     <h2>Bs As - Octubre</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At placeat molestias vitae unde facere voluptatem minus voluptates commodi corrupti tenetur! Pariatur qui enim animi sapiente sed error similique molestiae ipsum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, excepturi deleniti harum facilis id, a illo assumenda officiis illum praesentium eos. Qui laborum ratione in hic ducimus debitis voluptatum aperiam.</p>
+                    <p>Buenos Aires es la provincia y localidad màs grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al area urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad(aproximadamente 600 km de superficie). </p>
                     <a class="btn btn-outline-light" href="#">Conocé más</a>
                 </div>
             </div>
         </section>
 
+        <!-- FORMULARIO: formulario para que las personas interesadas en convertirse en oradores de una charla-->
         <section class="container" id="form-orador">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
@@ -201,7 +218,7 @@
                                     placeholder="Sobre qué quieres hablar?" required></textarea>
                                 <div id="emailHelp" class="form-text mb-3">Recuerda incluir un título para tu charla.</div>
                                 <div class="d-grid">
-                                    <button type="submit" class="btn btn-lg btn-form">Enviar</button>
+                                    <button type="submit" class="btn btn-success ms-2 mb-3">Enviar</button>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +227,8 @@
             </div>
         </section>
     </main>
-    
+
+    <!-- FOOTER -->
     <footer id="main-footer">
         <div class="container">
             <ul class="nav justify-content-center justify-content-lg-between align-items-center">

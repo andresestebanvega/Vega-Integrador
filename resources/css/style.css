@@ -1,12 +1,15 @@
 /* HEADER
 ------------------------- */
-
+/*El selector .navbar-brand img se utiliza para establecer el ancho máximo de la imagen del logotipo a 100 píxeles.*/
 .navbar-brand img { max-width: 100px; }
 
+/*Se agrega a la clase de bootstrap .bg-dark  un color de fondo oscuro para la barra de navegación.*/
 .bg-dark { background: #333a40!important; }
 
+/*La clase .btn-compra-tickets establecen el color del texto del botón de compra de entradas en verde (#25a342) en la barra de navegación oscura.*/
 .navbar-dark .navbar-nav .btn-compra-tickets { color: #25a342; }
 
+/*El media query @media (min-width: 992px) establece un conjunto de estilos para dispositivos con una resolución de pantalla de 992 píxeles o más. En este caso, establece un borde ligeramente redondeado y verde para el botón de compra de entradas y establece el color de fondo en verde oscuro cuando se hace clic o se coloca el cursor sobre el botón.*/
 @media (min-width: 992px) {
   .btn-compra-tickets {
     border: 1px solid transparent;
@@ -18,6 +21,7 @@
   }
 }
 
+/*La clase .pt-section se utiliza para establecer un relleno superior de 7 rem para las secciones principales de la página web.*/
 .pt-section { padding-top: 7rem; }
 
 
@@ -40,15 +44,16 @@
 
 /* CAROUSEL
 -------------------------------------------------- */
-
+/*se definen las imágenes de fondo para cada slide del carousel*/
 .bg-carousel-ba1 { background-image: url(../img/ba1.jpg); }
 .bg-carousel-ba2 { background-image: url(../img/ba2.jpg); }
 .bg-carousel-ba3 { background-image: url(../img/ba3.jpg); }
-
+/*el tamaño y posición de la imagen de fondo*/
 .carousel-item {
   background-size: cover;
   background-position: center center;
 }
+/*se define una opacidad de 0.5 para las imágenes */
 .carousel-item svg { opacity: .5; }
 
 .carousel-caption {
@@ -65,20 +70,13 @@
 
 /* SECCION MITAD IMG, MITAD TEXTO   -------------------seccion oradores
 -------------------------------------------------- */
-
+/*dar formato a la mitad de la imagen, la cual tendrá un fondo de color gris oscuro (#333a40) y un relleno de 2rem*/
 .bg-aside1 {
   background: #333a40;
   padding: 2rem;
 }
 
 
-/* FORM COMPRAR TICKETS
--------------------------------------------------- */
-
-#totalPago {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
 
 
 
@@ -100,3 +98,5 @@
 @media (min-width: 992px) {
   #main-footer .nav-link span { display: block; }
 }
+
+
