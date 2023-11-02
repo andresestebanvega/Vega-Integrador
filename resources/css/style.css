@@ -99,4 +99,28 @@
   #main-footer .nav-link span { display: block; }
 }
 
+/*parte de comprar-tickets*/
+#inicio-contenido {
+  margin-top: 100px; /* Ajusta la cantidad de espacio según tus necesidades */
+}
 
+
+
+
+/* Estilos para promociones */
+.promo-container {
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.promo-card {
+  width: max-content;
+}
+
+/* Estilos para el formulario */
+.form-container {
+  width: 50%;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 20px;
+}

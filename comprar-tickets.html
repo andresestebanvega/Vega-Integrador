@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Configuracion de la pagina + info adicional + titulo de la pagina + icono-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vega-TP-Integrador</title>
+    <link rel="icon" href="./resources/img/codoacodo.png">
+    <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/JS/comprar-tickets.js">
+    <script src="./resources/JS/comprar-tickets.js"></script>
+</head>
+
+<!-- Contenido de la Pagina -->
+<body>
+    <!-- Cabecera de la pagina -->
+    <header>
+        <!-- defino la barra de navegacion -->
+        <!-- creo la barra de navegacion, le doy estilo color, fondo, la fijo  -->
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+            <!-- centro y limito el ancho del contenido de la barra -->
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/resources/img/codoacodo.png" alt="Codo a Codo logo">
+                    Conf Bs As
+                </a>
+                <!-- defino boton para expandir o no el menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- muestro el icono del boton del menu de navegacion -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#oradores">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#lugar">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#form-orador">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-compra-tickets" href="comprar-tickets.html">Comprar tickets</a>
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--  Contenido de la Pagina -->
+    <main>
+         Promociones 
+        <section id="inicio-contenido">
+            <div class="container-fluid" style="width: 600px;margin-bottom: 20px">
+                <div class="row cards" style="width: max-content">
+                    <div class="col-sm-3 d-flex justify-content-center align-items-center">
+                        <div class="card border-primary">
+                            <div class="card-body text-center">
+                                <h5>Estudiante</h5>
+                                <p>Tiene un descuento</p>
+                                <p><b>80%</b></p>
+                                <h6>*presentar documentacion</h6>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="col-sm-3 d-flex justify-content-center align-items-center">
+                        <div class="card border-success">
+                            <div class="card-body text-center">
+                                <h5>Trainee</h5>
+                                <p>Tiene un descuento</p>
+                                <p><b>50%</b></p>
+                                <h6>*presentar documentacion</h6>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="col-sm-3 d-flex justify-content-center align-items-center">
+                        <div class="card border-warning">
+                            <div class="card-body text-center">
+                                <h5>Junior</h5>
+                                <p>Tiene un descuento</p>
+                                <p><b>15%</b></p>
+                                <h6>*presentar documentacion</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>|
+
+        <!-- Formulario y JS --> 
+        <section>
+            <div class="container" style="width: 50%; text-align: center; align-content: center;margin-bottom: 20px">
+                <div>
+                  <h5>VENTA</h5>
+                  <b>
+                  <h1>VALOR DE TICKET $200</h1>
+                </div>
+              
+                <div class="col">
+                    <div class="row" style="margin-bottom: 20px">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="Nombre">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="Apellido">
+                        </div>
+                    </div>
+                    
+                    <div class="col"style="margin-bottom: 20px" >
+                        <input type="email" class="form-control" placeholder="Correo" id="Email" required="required">
+                    </div>
+                    
+                    <div class="row" style="margin-bottom: 20px" >
+                        
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Cantidad" id="Cantidad">
+                        </div>
+                        <div class="col">
+                          <select class="form-select" id="Option">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                          </select>
+                    </div>
+                </div>
+                <input type="text" class="form-control alert alert-primary" role="alert" style="text-align:left" placeholder="Total a Pagar: $" id="resultado">  
+                <div class="row">
+                    <div class="col">
+                      <button type="button" class="btn btn-success" onclick="borrar()" style="width: 100%;">Borrar</button>
+                    </div>  
+                    <div class="col">
+                      <button type="button" class="btn btn-success" onclick="captura()" style="width: 100%;">Resumen</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+        <div class="container">
+            <ul class="nav justify-content-center justify-content-lg-between align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Preguntas <span>frecuentes</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Términos y <span>condiciones</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Estudiantes</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
