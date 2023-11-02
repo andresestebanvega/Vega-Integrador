@@ -106,21 +106,3 @@
 
 
 
-
-/* Estilos para promociones */
-.promo-container {
-  width: 600px;
-  margin-bottom: 20px;
-}
-
-.promo-card {
-  width: max-content;
-}
-
-/* Estilos para el formulario */
-.form-container {
-  width: 50%;
-  text-align: center;
-  align-content: center;
-  margin-bottom: 20px;
-}

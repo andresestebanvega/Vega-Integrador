@@ -31,3 +31,4 @@ function borrar() {
     document.getElementById("Cantidad").value = "";
     document.getElementById("Email").value = "";
 }
+
